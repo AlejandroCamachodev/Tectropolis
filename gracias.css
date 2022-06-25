@@ -1,0 +1,80 @@
+:root{
+    --primario: #9C27B0;
+    --primarioObscuro: #891190;
+    --secundario: #FFCE00;
+    --blanco: #FFF;
+    --negro: #000;
+    --rojo: #79101E;
+    --gris: #44393971;
+    --azul: #006DFF;
+    --verde: #229A0A;
+    --celeste: #0DB2CC;
+    --colorlogo: #3310BD;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  /** Globales*/
+  body{
+    background-image: linear-gradient(to top, rgb(2, 16, 53) 0%, #080808 10%);
+      font-size: 1.6rem;
+      line-height: 1.5;
+  }
+   p{
+       font-size: 1.8rem;
+       font-family:Arial, Helvetica, sans-serif;
+       color: var(--blanco);
+   }
+   
+   a{
+       text-decoration: none;
+
+   }
+  
+   .contenedor
+   {
+       max-width: 120rem;
+       margin: 0 auto;
+   }
+   h1{
+       text-align: center;
+       color: #0db2cc;
+       font-family:Arial, Helvetica, sans-serif;
+   }
+   h1{
+font-size: 10rem;
+   }
+   h2{
+font-size: 4.2rem;
+color: #ffffff;
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
+
+   /**Header**/
+   .header{
+       display: flex;
+       justify-content: left;
+
+   }
+   .header__logo{
+       margin: 3rem 0;
+   }
+   /** Footer**/
+   .footer{
+background-color: var(--celeste);
+padding: 1rem 0;
+}
+.footer__texto{
+text-align: center;
+font-family: var(--fuentePrincipal);
+font-size: 2rem;
+color: var(--negro);
+}

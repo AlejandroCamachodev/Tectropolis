@@ -1,0 +1,199 @@
+:root{
+    --primario: #9C27B0;
+    --primarioObscuro: #891190;
+    --secundario: #FFCE00;
+    --blanco: #FFF;
+    --negro: #000;
+    --rojo: #79101E;
+    --gris: #44393971;
+    --azul: #006DFF;
+    --verde: #229A0A;
+    --celeste: #0DB2CC;
+    --colorlogo: #3310BD;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  /** Globales*/
+  body{
+    background-image: linear-gradient(to top, rgb(2, 16, 53) 0%, #080808 10%);
+      font-size: 1.6rem;
+      line-height: 1.5;
+  }
+   p{
+       font-size: 1.8rem;
+       font-family:Arial, Helvetica, sans-serif;
+       color: var(--blanco);
+   }
+   
+   a{
+       text-decoration: none;
+
+   }
+  
+   .contenedor
+   {
+       max-width: 120rem;
+       margin: 0 auto;
+   }
+   h1,h2,h3{
+       text-align: center;
+       color: #7c1204;
+       font-family:Arial, Helvetica, sans-serif;
+   }
+   h1{
+font-size: 4rem;
+   }
+   h2{
+font-size: 3.2rem;
+   }
+   h3{
+font-size: 2.4rem;
+   }
+
+   /**Header**/
+   .header{
+       display: flex;
+       justify-content: center;
+
+   }
+   .header__logo{
+       margin: 3rem 0;
+   }
+   /** Footer**/
+   .footer{
+background-color: var(--celeste);
+padding: 1rem 0;
+}
+.footer__texto{
+text-align: center;
+font-family: var(--fuentePrincipal);
+font-size: 2rem;
+color: var(--negro);
+}
+
+
+   /** Navegacion**/
+   .navegacion {
+background-color: var(--celeste);
+padding: 1rem 0;
+display: flex;
+justify-content: center;
+gap: 2rem; 
+   }
+.navegacion__enlace{
+font-family: var(--fuentePrincipal);
+
+color: var(--negro);
+font-size: 3rem;
+margin-right: 2rem;
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: var(--colorlogo);
+}
+
+
+
+.sombra{
+
+    box-shadow: 0px 5px 15px 0px rgba(128, 3, 3, 0.66);
+    background-image: linear-gradient(to bottom, #080808 0%, #084c67 110%);
+    padding: 2rem;
+    border-radius: 1rem;
+    }
+
+
+
+
+
+
+    
+    .contenedor{
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+    
+    .boton{
+        cursor: pointer;
+        background-color:rgb(104, 4, 4);
+        color: var(--blanco);
+        padding: 1rem 3rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 90%;
+        text-align: center;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    @media (min-width: 768px) {
+        .boton {
+            width: auto;
+        }
+    
+    }
+    
+    
+    
+
+    .formularios{
+        background-image: linear-gradient(to bottom, #000f 0% , #000000     120%);
+        width:  min(60rem, 100% ); /**ulilizar el valor mas pequeño */
+        margin: 0 auto;
+        padding: 4rem;
+        border-radius: 1rem;
+    }
+    
+    .formularios fieldset{
+        border: none;
+    }
+    
+    .formularios legend{
+        text-align: center;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: rgb(11, 11, 194);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+
+    .formularios ::placeholder{
+        font-size: 2rem;
+    }
+
+    .contenedor-campos{
+
+    }
+    .campo{
+margin-bottom: 1rem;
+    }
+    .campo label{
+color: var(--blanco);
+text-align: left;
+font-weight: bold;
+margin-bottom: .5rem;
+display: block;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 2rem;
+    }
+
+    .input-text{
+        width: 100%;
+        border: none;
+        padding: 1.5rem;
+        border-radius: .5rem;
+        font-size: 2rem;
+    }
